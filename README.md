@@ -15,7 +15,7 @@ This project is a fan-made site dedicated to showcasing the world of **Dragon Ba
 
 ## Live Demo  
 
-[Click Here to Visit the Website](https://dragon-ball.netlify.app)  
+[Click Here to Visit the Website](https://dragon-ballfans.netlify.app)  
 
 
 ## Technologies Used
