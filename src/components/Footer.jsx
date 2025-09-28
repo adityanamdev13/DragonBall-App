@@ -6,7 +6,7 @@ const Footer = () => {
       <img
         src="footer.png"
         alt="footer-img"
-        className="absolute bottom-4 w-56 right-4 "
+        className="absolute md:bottom-4 md:w-56 w-32 right-4 top-[-40px]"
       />
       <div>
         <p className="text-center text-gray-300">©2025, DragOnball.com, Inc. All rights reserved.</p>

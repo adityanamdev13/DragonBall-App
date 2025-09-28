@@ -32,14 +32,14 @@ const AllCharacters = () => {
     queryFn: fetchCharacters,
     initialPageParam: 1,
     getNextPageParam: (lastPage) => {
-      // Check if there's a next page based on the API response structure
+
       const currentPage = lastPage.meta?.currentPage || 1;
       const totalPages = lastPage.meta?.totalPages || 1;
       
       return currentPage < totalPages ? currentPage + 1 : undefined;
     },
-    staleTime: 5 * 60 * 1000, // 5 minutes
-    cacheTime: 10 * 60 * 1000, // 10 minutes
+    staleTime: 5 * 60 * 1000, 
+    cacheTime: 10 * 60 * 1000, 
   });
 
   const { ref, inView } = useInView({

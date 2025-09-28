@@ -77,13 +77,13 @@ const PlanetDetail = () => {
 
             {/* Planet Info */}
             <div className="flex-1 text-center lg:text-left">
-              <h1 className="text-4xl lg:text-6xl font-extrabold text-gray-900 mb-2">
+              <h1 className="text-4xl lg:text-6xl font-extrabold text-gray-900 mb-3">
                 {name}
               </h1>
               <div className="flex items-center justify-center lg:justify-start gap-2 mb-4">
                 <IoPlanetSharp className="w-6 h-6 text-blue-600" />
                 <span
-                  className={`text-lg font-medium px-3 py-1 rounded-full ${
+                  className={`text-sm font-medium px-3 py-1 rounded-full ${
                     isDestroyed
                       ? "bg-red-100 text-red-700 border border-red-200"
                       : "bg-green-100 text-green-700 border border-green-200"
@@ -92,7 +92,7 @@ const PlanetDetail = () => {
                   {isDestroyed ? "Destroyed" : "Active"}
                 </span>
               </div>
-              <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
+              <p className="text-gray-600 text-sm leading-relaxed max-w-2xl">
                 {description}
               </p>
             </div>
@@ -144,7 +144,6 @@ const PlanetDetail = () => {
         {characters.length > 0 && (
           <div className="bg-white border border-gray-300 rounded-3xl shadow-xl p-8">
             <div className="flex items-center gap-3 mb-8">
-              <FaUsers className="w-6 h-6 text-blue-600" />
               <h2 className="text-2xl font-bold text-gray-900">
                 Characters from {name}
               </h2>

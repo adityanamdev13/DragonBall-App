@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "@tanstack/react-query";
-import { useParams} from "react-router-dom";
+import { useNavigate, useParams} from "react-router-dom";
 import {
   FaFire,
   FaBolt,
@@ -11,12 +11,11 @@ import {
   FaMale,
 } from "react-icons/fa";
 import { GiBodyHeight } from "react-icons/gi";
-import { MdOutlineTransform } from "react-icons/md";
 import Spinner from "../components/Spinner"
 
 const CharacterDetail = () => {
   const { id } = useParams();
-
+const navigate= useNavigate();
 
   const {
     data: character,
@@ -95,7 +94,7 @@ const CharacterDetail = () => {
                   {affiliation}
                 </span>
               </div>
-              <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
+              <p className="text-gray-600 leading-relaxed text-sm">
                 {description}
               </p>
             </div>
@@ -119,9 +118,9 @@ const CharacterDetail = () => {
               </div>
              <div>
                <h3 className="text-gray-700 font-semibold ">{stat.label}</h3>
-              <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
+              <p className="text-xl font-bold text-gray-900">{stat.value}</p>
              </div>
-            </div>
+            </div>  
           ))}
         </div>
 
@@ -134,9 +133,13 @@ const CharacterDetail = () => {
             </div>
             <div className="flex flex-col lg:flex-row items-center gap-8">
               <img
+              onClick={() => {
+                    navigate(`/planet/${originPlanet.id}`);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                 src={originPlanet.image}
                 alt={originPlanet.name}
-                className="w-40 h-40 lg:w-48 lg:h-48 rounded-2xl object-cover shadow-md"
+                className="w-40 h-40 lg:w-48 lg:h-48 rounded-2xl object-cover shadow-md cursor-pointer"
               />
               <div className="flex-1 text-center lg:text-left">
                 <h3 className="text-xl font-bold text-gray-800 mb-3">{originPlanet.name}</h3>

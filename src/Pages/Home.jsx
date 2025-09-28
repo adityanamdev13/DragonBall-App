@@ -27,11 +27,30 @@ const Home = () => {
 
         <div
           className="bg-white border border-gray-300 px-6 sm:px-10 lg:px-14 py-8 
-  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 
-  mx-5 md:mx-10 rounded-3xl shadow-2xl 
-  place-items-center"
+          grid grid-cols-1   lg:grid-cols-4 gap-6 
+          mx-5 md:mx-10 rounded-3xl shadow-2xl 
+          place-items-center"
         >
-          {/* Card */}
+          <div className="hidden md:block col-span-2 bg-black  rounded-xl shadow-md p-8 text-center">
+            <h2 className="text-3xl font-bold mb-4 text-yellow-500">
+              Explore the Dragon Ball Universe
+            </h2>
+            <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-6">
+              From legendary warriors like{" "}
+              <span className="font-semibold">Goku</span> and{" "}
+              <span className="font-semibold">Vegeta</span> to iconic worlds like{" "}
+              <span className="font-semibold">Planet Namek</span> and{" "}
+              <span className="font-semibold">Earth</span>, dive into the adventures
+              that shaped the Dragon Ball saga.
+            </p>
+            <a
+              href="/characters"
+              className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-xl shadow-md transition"
+            >
+              Start Exploring →
+            </a>
+          </div>
+
           <NavigateCard
             title="The Characters"
             navTo="/characters"
