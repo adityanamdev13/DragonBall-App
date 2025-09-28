@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <div>
         <div className="flex flex-col md:flex-row items-center justify-between mx-5 md:mx-10 pt-10 pb-10 space-y-6 md:space-y-0">
-          <img src="mv.png" alt="heroImage" className="w-64 md:w-80 lg:w-96" />
+          <img src="mv.webp" alt="heroImage" className="w-64 md:w-80 lg:w-96" />
           <div>
             <div className="relative text-center md:text-left">
               <h1 className="text-4xl sm:text-6xl lg:text-9xl font-bold font-serif md:mr-20">
@@ -54,9 +54,9 @@ const Home = () => {
           <NavigateCard
             title="The Characters"
             navTo="/characters"
-            src="pngegg.png"
+            src="pngegg.webp"
           />
-          <NavigateCard title="The Planets" navTo="/planets" src="123.png" />
+          <NavigateCard title="The Planets" navTo="/planets" src="123.webp" />
         </div>
       </div>
     </>

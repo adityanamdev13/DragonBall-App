@@ -4,3 +4,8 @@
 .active{
     color: #ffb000;
 }
+
+
+.bg-comics {
+  background-image: url('/bg_comics.webp');
+}

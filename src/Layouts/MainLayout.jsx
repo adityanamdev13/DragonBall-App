@@ -7,7 +7,7 @@ const MainLayout = () => {
   return (
     <>
       <Navbar />
-      <main className="bg-[url(bg_comics.webp)] bg-fixed pb-20 ">
+      <main className="bg-comics bg-fixed pb-20 ">
         <Outlet />
       </main>
       <Footer />
