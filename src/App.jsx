@@ -4,6 +4,8 @@ import MainLayout from "./Layouts/MainLayout";
 import Home from "./Pages/Home";
 import AllCharacters from "./Pages/AllCharacters";
 import CharacterDetail from "./Pages/CharacterDetail";
+import AllPlanets from "./Pages/AllPlanets";
+import PlanetDetail from "./Pages/PlanetDetail";
 
 const App = () => {
   return (
@@ -19,6 +21,9 @@ const App = () => {
             <Route index element={<Home />} />
             <Route path="/characters" element={<AllCharacters />} />
             <Route path="/character/:id" element={<CharacterDetail />} />
+
+             <Route path="/planets" element={<AllPlanets />} />
+             <Route path="/planet/:id" element={<PlanetDetail />} />
           </Route>
         </Routes>
       </BrowserRouter>
